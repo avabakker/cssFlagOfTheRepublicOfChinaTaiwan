@@ -1,0 +1,71 @@
+@mixin twflag($width) {
+
+    $tw-flag-width: $width;
+    $tw-flag-height: $tw-flag-width / 3 * 2;
+    $sin15_sin75: 0.26794919243;
+    $tw-flag-blue: #003686;
+
+    .twflag {
+        width: $tw-flag-width;
+        height: $tw-flag-height;
+        background-color: #d7000f;
+    }
+
+    .twsunflag {
+        width: $tw-flag-width / 2;
+        height: $tw-flag-height / 2;
+        background-color: $tw-flag-blue;
+        position: relative;
+    }
+
+    .twsunflag .light {
+        height: 0;
+        width: 0;
+        border-color: #fff transparent transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: ($tw-flag-width / 8) ($tw-flag-width / 8 * $sin15_sin75) 0 ($tw-flag-width / 8 * $sin15_sin75) ;
+        transform-origin: 50% 0;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: $tw-flag-width / 4 - ($tw-flag-width / 8 * $sin15_sin75);
+    }
+
+    .twsunflag .light.r1 {
+        transform: rotate(30deg);
+    }
+
+    .twsunflag .light.r2 {
+        transform: rotate(60deg);
+    }
+
+    @for $i from 0 through 11 {
+        .twsunflag .light.r#{$i} { transform: rotate(30deg * $i); }
+    }
+
+    .twsunflag .circle {
+        position: absolute;
+    }
+
+    .twsunflag .circle.bl {
+        background-color: $tw-flag-blue;
+        @include twsunflag_circle($tw-flag-width, 17);
+        z-index: 2;
+    }
+
+    .twsunflag .circle.wh {
+        background-color: #fff;
+        @include twsunflag_circle($tw-flag-width, 15);
+        z-index: 3;
+    }
+
+}
+
+@mixin twsunflag_circle($tw-flag-width, $len) {
+    width: $tw-flag-width * $len / 120;
+    height: $tw-flag-width * $len / 120;
+    top: ($tw-flag-width / 6) - ($tw-flag-width * $len / 2 / 120);
+    left: ($tw-flag-width / 4) - ($tw-flag-width * $len / 2 / 120);
+    border-radius: $tw-flag-width * $len / 120 / 2;
+}
+

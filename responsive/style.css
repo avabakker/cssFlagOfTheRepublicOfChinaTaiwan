@@ -1,0 +1,77 @@
+.twflag {
+    position: relative;
+}
+
+.twredflag {
+    width: 100%;
+    height: 0;
+    padding-top: 66.66666666667%;
+    background-color: #d7000f;
+}
+
+.twsunflag {
+    width: 50%;
+    height: 50%;
+    background-color: #003686;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.twsunflag .light {
+    width: calc(25% / 0.96592582628 * 0.86602540378);
+    height: calc(37.5% / 0.96592582628 * 0.86602540378);
+    background-color: #fff;
+    position: absolute;
+    left: calc(50% - 25% / 0.96592582628 * 0.86602540378 / 2);
+    top: calc(50% - 37.5% / 0.96592582628 * 0.86602540378 / 2);
+    z-index: 1;
+}
+
+.twsunflag .light.r0 {
+    transform: rotate(45deg) skew(30deg, 30deg);
+}
+
+.twsunflag .light.r1 {
+    transform: rotate(75deg) skew(30deg, 30deg);
+}
+
+.twsunflag .light.r2 {
+    transform: rotate(105deg) skew(30deg, 30deg);
+}
+
+.twsunflag .light.r3 {
+    transform: rotate(135deg) skew(30deg, 30deg);
+}
+
+.twsunflag .light.r4 {
+    transform: rotate(165deg) skew(30deg, 30deg);
+}
+
+.twsunflag .light.r5 {
+    transform: rotate(195deg) skew(30deg, 30deg);
+}
+
+.twsunflag .circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.twsunflag .circle.bl {
+    background-color: #003686;
+    width: 28.33333333333%;
+    height: 42.5%;
+    left: 35.83333333335%;
+    top: 28.75%;
+    z-index: 2;
+}
+
+.twsunflag .circle.wh {
+    background-color: #fff;
+    width: 25%;
+    height: 37.5%;
+    left: 37.5%;
+    top: 31.25%;
+    z-index: 3;
+}

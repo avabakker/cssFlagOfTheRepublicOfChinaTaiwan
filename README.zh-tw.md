@@ -22,3 +22,6 @@
 > sass style.scss style.css
 
 檢視一個800px的範例： https://avabakker.github.io/cssFlagOfTheRepublicOfChinaTaiwan/fixedWidthWithSASS/index.html
+
+## 版權資訊
+[MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)

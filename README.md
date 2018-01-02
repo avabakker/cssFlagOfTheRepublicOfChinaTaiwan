@@ -22,3 +22,6 @@ To generate the css file, install SASS then run this command on command line:
 > sass style.scss style.css
 
 See an example with 800px width at: https://avabakker.github.io/cssFlagOfTheRepublicOfChinaTaiwan/fixedWidthWithSASS/index.html
+
+## License
+[MIT](https://en.wikipedia.org/wiki/MIT_License)

@@ -1,0 +1,87 @@
+.twflag {
+  width: 800px;
+  height: 533.3333333333px;
+  background-color: #d7000f; }
+
+.twsunflag {
+  width: 400px;
+  height: 266.6666666667px;
+  background-color: #003686;
+  position: relative; }
+
+.twsunflag .light {
+  height: 0;
+  width: 0;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 100px 26.794919243px 0 26.794919243px;
+  transform-origin: 50% 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 173.205080757px; }
+
+.twsunflag .light.r1 {
+  transform: rotate(30deg); }
+
+.twsunflag .light.r2 {
+  transform: rotate(60deg); }
+
+.twsunflag .light.r0 {
+  transform: rotate(0deg); }
+
+.twsunflag .light.r1 {
+  transform: rotate(30deg); }
+
+.twsunflag .light.r2 {
+  transform: rotate(60deg); }
+
+.twsunflag .light.r3 {
+  transform: rotate(90deg); }
+
+.twsunflag .light.r4 {
+  transform: rotate(120deg); }
+
+.twsunflag .light.r5 {
+  transform: rotate(150deg); }
+
+.twsunflag .light.r6 {
+  transform: rotate(180deg); }
+
+.twsunflag .light.r7 {
+  transform: rotate(210deg); }
+
+.twsunflag .light.r8 {
+  transform: rotate(240deg); }
+
+.twsunflag .light.r9 {
+  transform: rotate(270deg); }
+
+.twsunflag .light.r10 {
+  transform: rotate(300deg); }
+
+.twsunflag .light.r11 {
+  transform: rotate(330deg); }
+
+.twsunflag .circle {
+  position: absolute; }
+
+.twsunflag .circle.bl {
+  background-color: #003686;
+  width: 113.3333333333px;
+  height: 113.3333333333px;
+  top: 76.6666666667px;
+  left: 143.3333333333px;
+  border-radius: 56.6666666667px;
+  z-index: 2; }
+
+.twsunflag .circle.wh {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 83.3333333333px;
+  left: 150px;
+  border-radius: 50px;
+  z-index: 3; }
+
+/*# sourceMappingURL=style.css.map */

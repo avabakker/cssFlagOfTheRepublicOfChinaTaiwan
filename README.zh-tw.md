@@ -10,6 +10,8 @@
 
 在給定的容器中繪製中華民國（台灣）國旗。
 
+檢視範例： https://avabakker.github.io/cssFlagOfTheRepublicOfChinaTaiwan/responsive/index.html
+
 ## 固定寬度，使用 SASS 工具
 
 在 `fixedWidthWithSASS` 目錄底下。
@@ -18,3 +20,5 @@
 
 要產生這個 CSS 檔案，請先安裝 SASS 然後在命令列輸入：
 > sass style.scss style.css
+
+檢視一個800px的範例： https://avabakker.github.io/cssFlagOfTheRepublicOfChinaTaiwan/fixedWidthWithSASS/index.html
